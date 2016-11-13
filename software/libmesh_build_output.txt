@@ -1,0 +1,888 @@
+$ ./configure PETSC_DIR=/home/thomas/petsc PETSC_ARCH=arch-linux2-c-debug --with-methods=dbg --enable-everything
+---------------------------------------------
+----------- Configuring libMesh -------------
+---------------------------------------------
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for src/base/libmesh.C... yes
+checking for perl... /usr/bin/perl
+checking for style of include used by make... GNU
+checking for mpicxx... mpicxx
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether mpicxx accepts -g... yes
+checking dependency style of mpicxx... gcc3
+<<< C++ compiler is gcc-5.x >>>
+checking for mpicc... mpicc
+checking whether we are using the GNU C compiler... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to accept ISO C89... none needed
+checking whether mpicc understands -c and -o together... yes
+checking dependency style of mpicc... gcc3
+checking for mpif90... mpif90
+checking whether we are using the GNU Fortran compiler... yes
+checking whether mpif90 accepts -g... yes
+checking for mpif77... mpif77
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether mpif77 accepts -g... yes
+checking whether mpicxx supports C++11 features by default... no
+checking whether mpicxx supports C++11 features with -std=gnu++11... yes
+<<< Configuring libMesh with methods "dbg" >>>
+checking for C++11 std::move support... yes
+checking for C++11 range-based for loop support... yes
+checking for C++11 decltype support... yes
+checking for C++11 rvalue references support... yes
+checking for C++11 auto keyword support... yes
+checking for C++11 lambda support... yes
+checking for C++11 constexpr support... yes
+checking for C++11 alias declarations support... yes
+checking for C++11 std::shared_ptr support with dbg flags... yes
+checking for C++11 std::unique_ptr support... yes
+checking for C++14 std::make_unique support... no
+checking for C++11 std::make_unique workaround support... yes
+checking for C++11 std::regex support... yes
+checking for C++11 override keyword support... yes
+checking for C++11 initializer list support... yes
+checking for C++11 variadic template support... yes
+checking for C++11 <thread> support... yes
+checking for C++11 <condition_variable> support... yes
+checking for C++11 <type_traits> support... yes
+checking for C++11 std::asinh support in <cmath>... yes
+checking for C++11 std::acosh support in <cmath>... yes
+checking for C++11 std::atanh support in <cmath>... yes
+checking for C++11 std::asinh(complex) support in <complex>... yes
+checking for C++11 std::acosh(complex) support in <complex>... yes
+checking for C++11 std::atanh(complex) support in <complex>... yes
+checking for C++11 deleted functions support... yes
+checking for C++11 'final' keyword support... yes
+checking for C++11 nullptr support... yes
+checking for C++11 std::to_string() support... yes
+checking for C++11 noexcept support... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by mpicc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from mpicc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... mpicc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if mpicc supports -fno-rtti -fno-exceptions... no
+checking for mpicc option to produce PIC... -fPIC -DPIC
+checking if mpicc PIC flag -fPIC -DPIC works... yes
+checking if mpicc static flag -static works... no
+checking if mpicc supports -c -o file.o... yes
+checking if mpicc supports -c -o file.o... (cached) yes
+checking whether the mpicc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... mpicxx -E
+checking for ld used by mpicxx... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the mpicxx linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for mpicxx option to produce PIC... -fPIC -DPIC
+checking if mpicxx PIC flag -fPIC -DPIC works... yes
+checking if mpicxx static flag -static works... no
+checking if mpicxx supports -c -o file.o... yes
+checking if mpicxx supports -c -o file.o... (cached) yes
+checking whether the mpicxx linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for mpif77 option to produce PIC... -fPIC
+checking if mpif77 PIC flag -fPIC works... yes
+checking if mpif77 static flag -static works... no
+checking if mpif77 supports -c -o file.o... yes
+checking if mpif77 supports -c -o file.o... (cached) yes
+checking whether the mpif77 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for mpif90 option to produce PIC... -fPIC
+checking if mpif90 PIC flag -fPIC works... yes
+checking if mpif90 static flag -static works... no
+checking if mpif90 supports -c -o file.o... yes
+checking if mpif90 supports -c -o file.o... (cached) yes
+checking whether the mpif90 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking Major version... 1
+checking Minor version... 1
+checking Point version... 0
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for pkg-config... /usr/bin/pkg-config
+checking whether the compiler implements namespaces... yes
+---------------------------------------------
+------- Configuring compiler features -------
+---------------------------------------------
+<<< Default floating point is double precision (double) >>>
+checking for C/C++ restrict keyword... __restrict
+<<< Configuring library with getpwuid >>>
+<<< Configuring library with exception throwing support >>>
+<<< Configuring library with compile timestamps >>>
+checking size of short int... 2
+checking size of int... 4
+checking size of unsigned int... 4
+checking size of size_t... 8
+checking size of long int... 8
+checking size of float... 4
+checking size of double... 8
+checking size of void *... 8
+checking size of function_pointer... 8
+checking whether the compiler supports Run-Time Type Identification... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking csignal usability... yes
+checking csignal presence... yes
+checking for csignal... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking whether the compiler has locale... yes
+checking whether the compiler has stringstream... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking xmmintrin.h usability... yes
+checking xmmintrin.h presence... yes
+checking for xmmintrin.h... yes
+checking whether the compiler supports std::unordered_multimap... yes
+checking whether the compiler supports std::unordered_map... yes
+checking whether the compiler supports std::unordered_multiset... yes
+checking whether the compiler supports std::unordered_set... yes
+checking whether the compiler supports std::hash... yes
+checking for library containing dlopen... -ldl
+checking whether the c++ compiler supports dlopen/dlsym/dlclose... yes
+checking whether the compiler supports GCC C++ ABI name demangling... yes
+checking whether the c++ compiler supports glibc backtrace... yes
+checking if compiler has working errno_t declaration... yes
+---------------------------------------------
+----- Done configuring compiler features ----
+---------------------------------------------
+---------------------------------------------
+----- Configuring core library features -----
+---------------------------------------------
+configuring gdb command... "gdb"
+<<< Configuring library with a non-deprecated UniquePtr implementation >>>
+<<< Configuring library with warnings >>>
+<<< Configuring library to disable libMesh::CommWorld >>>
+<<< Configuring library to require ``include "libmesh/etc.h"'' style >>>
+<<< Configuring library to keep names in libMesh namespace >>>
+configuring size of boundary_id... 2
+configuring size of dof_id... 4
+configuring size of processor_id... 2
+configuring size of subdomain_id... 2
+<<< Configuring library with unique id support >>>
+configuring size of unique_id... 8
+<<< Configuring library with stack trace file support >>>
+<<< Configuring library with AMR support >>>
+<<< Configuring library with variational smoother support >>>
+<<< Configuring library with periodic BC support >>>
+<<< Configuring library with Dirichlet constraint support >>>
+<<< Configuring library with node constraints support >>>
+<<< Configuring library to use ghosted local vectors >>>
+<<< Configuring library to store node valence >>>
+<<< Configuring library with higher order p-FEM shapes >>>
+<<< Configuring library with infinite elements >>>
+<<< Configuring library with second derivatives >>>
+checking rpc/rpc.h usability... yes
+checking rpc/rpc.h presence... yes
+checking for rpc/rpc.h... yes
+checking for xdrstdio_create... yes
+<<< Configuring library with XDR support >>>
+<<< Configuring library with real number support >>>
+<<< Configuring library with reference counting support >>>
+<<< Configuring library with performance logging support >>>
+<<< Configuring library example suite support >>>
+---------------------------------------------
+-- Done configuring core library features ---
+---------------------------------------------
+---------------------------------------------
+----- Configuring for optional packages -----
+---------------------------------------------
+checking for boostlib >= 1.57.0... yes
+<<< Using external boost installation >>>
+checking for boost::movelib::unique_ptr support... yes
+<<< Howard Hinnant's unique_ptr implementation explicitly disabled >>>
+checking if safe_bool<T> allows boolean comparisons... yes
+checking if safe_bool<T> prevents implicit conversions... yes
+<<< Compiling libmesh with safe_bool<T> support >>>
+checking /home/thomas/petsc/include/petscversion.h usability... no
+checking /home/thomas/petsc/include/petscversion.h presence... no
+checking for /home/thomas/petsc/include/petscversion.h... no
+<<< PETSc disabled.  Will try configuring MPI now... >>>
+note: MPI library path not given... trying prefix=/usr
+note: using /usr/lib/libmpi(.a/.so)
+checking for lam_show_version in -llam... no
+nm: /usr/lib/libmpi.so: no symbols
+nm: /usr/lib/libmpi.so.12: no symbols
+nm: /usr/lib/libmpi.so.12.0.2: no symbols
+checking for MPI_Init in -lmpi... yes
+Found valid MPI installlaion...
+note: using /usr/include/mpi/mpi.h
+checking mpi.h usability... yes
+checking mpi.h presence... yes
+checking for mpi.h... yes
+checking Whether MPI is available for Trilinos... yes
+checking Whether Real precision is compatible with Trilinos... yes
+<<< User requested thread model: auto >>>
+checking /usr/include/tbb/task_scheduler_init.h usability... yes
+checking /usr/include/tbb/task_scheduler_init.h presence... yes
+checking for /usr/include/tbb/task_scheduler_init.h... yes
+checking for tbb::tbb_thread support... yes
+<<< Configuring library with Intel TBB threading support >>>
+checking for thread local storage (TLS) class... __thread
+checking for OpenMP flag of C++ compiler... -fopenmp
+<<< Configuring library with OpenMP support >>>
+<<< Found thread model: tbb >>>
+<<< Laspack support is disabled, configure with --disable-strict-lgpl to enable it >>>
+<<< The space filling curves partitioner is disabled, configure with --disable-strict-lgpl to enable it >>>
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for gzopen in -lz... yes
+<<< Configuring library with gzstreams support >>>
+checking for bzip2... bzip2
+checking for bunzip2... bunzip2
+<<< Using bzip2/bunzip2 for writing/reading compressed .bz2 files >>>
+checking for xz... xz
+<<< Using xz for writing/reading compressed .xz files >>>
+<<< Testing X11 headers with -I/usr/include >>>
+checking X11/Intrinsic.h usability... yes
+checking X11/Intrinsic.h presence... yes
+checking for X11/Intrinsic.h... yes
+checking size of void *... (cached) 8
+<<< Configuring library with Tecplot TecIO support >>>
+./configure: line 39244: test: -gt: unary operator expected
+<<< Configuring library with Metis support >>>
+checking for thread local storage (TLS) class... (cached) __thread
+<<< Configuring library with Parmetis support >>>
+checking for doxygen... no
+<<< Tetgen support is disabled, configure with --disable-strict-lgpl to enable it >>>
+<<< Triangle meshing support is disabled, configure with --disable-strict-lgpl to enable it >>>
+checking for library containing sqrt... none required
+checking for library containing trunc... none required
+checking for library containing cos... none required
+<<< Configuring library with Qhull version 2012.1 support >>>
+<<< Configuring library with GMV support >>>
+checking /usr/include/vtk-6.2/vtkConfigure.h usability... yes
+checking /usr/include/vtk-6.2/vtkConfigure.h presence... yes
+checking for /usr/include/vtk-6.2/vtkConfigure.h... yes
+<<< Configuring library with VTK version 6.2.0 support >>>
+System EIGEN_INC=/usr/include/eigen3
+checking /usr/include/eigen3/Eigen/Eigen usability... yes
+checking /usr/include/eigen3/Eigen/Eigen presence... yes
+checking for /usr/include/eigen3/Eigen/Eigen... yes
+checking Eigen/Dense usability... yes
+checking Eigen/Dense presence... yes
+checking for Eigen/Dense... yes
+checking Eigen/Sparse usability... yes
+checking Eigen/Sparse presence... yes
+checking for Eigen/Sparse... yes
+checking Eigen/Dense usability... yes
+checking Eigen/Dense presence... yes
+checking for Eigen/Dense... yes
+checking Eigen/Sparse usability... yes
+checking Eigen/Sparse presence... yes
+checking for Eigen/Sparse... yes
+checking for eigen - version >= 3.1.2... yes
+<<< Configuring library with Eigen support >>>
+checking /usr/include/glpk.h usability... no
+checking /usr/include/glpk.h presence... no
+checking for /usr/include/glpk.h... no
+GLPK header files not found!
+checking for valid nlopt installation... no
+<<< Required header files not found, Cap'n Proto support disabled. >>>
+checking hdf5.h usability... no
+checking hdf5.h presence... no
+checking for hdf5.h... no
+checking for HDF5 version >= 1.8.0... configure: optional HDF5 library not found, or does not meet version requirements
+<<< HDF5 support not found or disabled >>>
+<<< Configuring library with NetCDF version 4 support >>>
+defining -DNOT_NETCDF4 for our Exodus build
+<<< Configuring library with Exodus version v5.22 support >>>
+<<< Configuring library with Exodus Fortran API >>>
+<<< Configuring library with Nemesis version v5.22 support >>>
+<<< Configuring library with libHilbert support >>>
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for bison... no
+checking for byacc... no
+<<< Configuring library with fparser support (release version) >>>
+checking for dlopen support... (cached) yes
+<<< Configuring library with fparser JIT compilation support >>>
+checking for cppunit-config... no
+checking for Cppunit - version >= 1.10.0... no
+<<< Configuring library with nanoflann KDtree support >>>
+----------------------------------------------
+--- Done configuring for optional packages ---
+----------------------------------------------
+removing duplicate include paths...
+removing duplicate libraries...
+checking for git... /usr/bin/git
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libmesh/Makefile
+config.status: creating contrib/Makefile
+config.status: creating contrib/utils/Makefile
+config.status: creating contrib/utils/Make.common
+config.status: creating tests/Makefile
+config.status: creating contrib/utils/libmesh.pc
+config.status: creating contrib/utils/libmesh-opt.pc
+config.status: creating contrib/utils/libmesh-dbg.pc
+config.status: creating contrib/utils/libmesh-devel.pc
+config.status: creating contrib/utils/libmesh-prof.pc
+config.status: creating contrib/utils/libmesh-oprof.pc
+config.status: creating doc/Doxyfile
+config.status: creating doc/Makefile
+config.status: creating doc/html/Makefile
+config.status: creating contrib/bin/libmesh-config
+config.status: creating contrib/bin/xda2mgf
+config.status: creating contrib/bin/create_libmesh_release
+config.status: creating doc/dot
+config.status: creating tests/run_unit_tests.sh
+config.status: creating contrib/boost/include/Makefile
+config.status: creating contrib/unique_ptr/Makefile
+config.status: creating contrib/laspack/Makefile
+config.status: creating contrib/sfcurves/Makefile
+config.status: creating contrib/gzstream/Makefile
+config.status: creating contrib/tecplot/tecio/Makefile
+config.status: creating contrib/tecplot/binary/Makefile
+config.status: creating contrib/metis/Makefile
+config.status: creating contrib/parmetis/Makefile
+config.status: creating contrib/tetgen/Makefile
+config.status: creating contrib/triangle/Makefile
+config.status: creating contrib/qhull/qhull/Makefile
+config.status: creating contrib/gmv/Makefile
+config.status: creating contrib/eigen/eigen/Makefile
+config.status: creating contrib/capnproto/Makefile
+config.status: creating contrib/netcdf/v3/Makefile
+config.status: creating contrib/exodusii/v5.09/Makefile
+config.status: creating contrib/exodusii/v5.22/exodus/Makefile
+config.status: creating contrib/nemesis/v3.09/Makefile
+config.status: creating contrib/nemesis/v5.22/nemesis/Makefile
+config.status: creating contrib/libHilbert/Makefile
+config.status: creating contrib/fparser/Makefile
+config.status: creating contrib/fparser/extrasrc/Makefile
+config.status: creating contrib/nanoflann/Makefile
+config.status: creating examples/introduction/introduction_ex1/Makefile
+config.status: creating examples/introduction/introduction_ex2/Makefile
+config.status: creating examples/introduction/introduction_ex3/Makefile
+config.status: creating examples/introduction/introduction_ex4/Makefile
+config.status: creating examples/introduction/introduction_ex5/Makefile
+config.status: creating examples/adaptivity/adaptivity_ex1/Makefile
+config.status: creating examples/adaptivity/adaptivity_ex2/Makefile
+config.status: creating examples/adaptivity/adaptivity_ex3/Makefile
+config.status: creating examples/adaptivity/adaptivity_ex4/Makefile
+config.status: creating examples/adaptivity/adaptivity_ex5/Makefile
+config.status: creating examples/adjoints/adjoints_ex1/Makefile
+config.status: creating examples/adjoints/adjoints_ex2/Makefile
+config.status: creating examples/adjoints/adjoints_ex3/Makefile
+config.status: creating examples/adjoints/adjoints_ex4/Makefile
+config.status: creating examples/adjoints/adjoints_ex5/Makefile
+config.status: creating examples/eigenproblems/eigenproblems_ex1/Makefile
+config.status: creating examples/eigenproblems/eigenproblems_ex2/Makefile
+config.status: creating examples/eigenproblems/eigenproblems_ex3/Makefile
+config.status: creating examples/fem_system/fem_system_ex1/Makefile
+config.status: creating examples/fem_system/fem_system_ex2/Makefile
+config.status: creating examples/fem_system/fem_system_ex3/Makefile
+config.status: creating examples/fem_system/fem_system_ex4/Makefile
+config.status: creating examples/solution_transfer/solution_transfer_ex1/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex1/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex2/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex3/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex4/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex5/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex6/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex7/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex8/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex9/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex10/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex11/Makefile
+config.status: creating examples/miscellaneous/miscellaneous_ex12/Makefile
+config.status: creating examples/optimization/optimization_ex1/Makefile
+config.status: creating examples/optimization/optimization_ex2/Makefile
+config.status: creating examples/subdomains/subdomains_ex1/Makefile
+config.status: creating examples/subdomains/subdomains_ex2/Makefile
+config.status: creating examples/subdomains/subdomains_ex3/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex1/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex2/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex3/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex4/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex5/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex6/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex7/Makefile
+config.status: creating examples/systems_of_equations/systems_of_equations_ex8/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex1/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex2/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex3/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex4/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex5/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex6/Makefile
+config.status: creating examples/reduced_basis/reduced_basis_ex7/Makefile
+config.status: creating examples/transient/transient_ex1/Makefile
+config.status: creating examples/transient/transient_ex2/Makefile
+config.status: creating examples/vector_fe/vector_fe_ex1/Makefile
+config.status: creating examples/vector_fe/vector_fe_ex2/Makefile
+config.status: creating examples/vector_fe/vector_fe_ex3/Makefile
+config.status: creating examples/vector_fe/vector_fe_ex4/Makefile
+config.status: creating examples/Makefile
+config.status: creating include/libmesh_config.h.tmp
+config.status: executing include/libmesh_config.h commands
+config.status: creating include/libmesh_config.h - prefix LIBMESH for include/libmesh_config.h.tmp defines
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in contrib/netcdf/v4 (/home/thomas/code/libmesh/contrib/netcdf/v4)
+configure: running /bin/bash ./configure --disable-option-checking '--prefix=/usr/local'  'PETSC_DIR=/home/thomas/petsc' 'PETSC_ARCH=arch-linux2-c-debug' '--with-methods=dbg' '--enable-everything' '--disable-netcdf-4' '--disable-testsets' 'CXX=mpicxx' 'CC=mpicc' 'F77=mpif77' 'FC=mpif90' 'CPPFLAGS= ' 'LIBS= -ldl ' --cache-file=/dev/null --srcdir=.
+configure: netCDF 4.3.1
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: checking user options
+checking whether a win32 DLL is desired... no
+checking whether a NCIO_MINBLOCKSIZE was specified... 256
+checking if fsync support is enabled... no
+checking whether extra valgrind tests should be run... no
+checking whether we should try to build netCDF-4... no
+checking do we require hdf5 dynamic-loading support... xno
+checking whether reading of HDF4 SD files is to be enabled... no
+checking whether to fetch some sample HDF4 files from Unidata ftp site to test HDF4 reading (requires wget)... no
+checking whether parallel I/O for classic and 64-bit offset files using parallel-netcdf is to be enabled... no
+checking whether extra example tests should be run... no
+checking whether parallel IO tests should be run... no
+checking whether a default chunk size in bytes was specified... 4194304
+checking whether a maximum per-variable cache size for HDF5 was specified... 67108864
+checking whether a number of chunks for the default per-variable cache was specified... 10
+checking whether a default file cache size for HDF5 was specified... 4194304
+checking whether a default file cache maximum number of elements for HDF5 was specified... 1009
+checking whether a default cache preemption for HDF5 was specified... 0.75
+checking whether netCDF-4 logging is enabled... no
+checking whether cdmremote client is to be built... no
+checking whether DAP client is to be built... yes
+checking for style of include used by make... GNU
+checking for gcc... mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to accept ISO C89... none needed
+checking whether mpicc understands -c and -o together... yes
+checking dependency style of mpicc... gcc3
+checking for curl_easy_setopt in -lcurl... yes
+checking for library containing curl_easy_setopt... -lcurl
+checking whether dap remote testing should be enabled (default off)... no
+checking whether netcdf4 group names should be enabled (default on)... yes
+checking whether the time-consuming dap tests should be enabled (default off)... no
+checking whether netCDF extra tests should be run (developers only)... no
+checking whether FFIO will be used... no
+checking whether examples should be built... yes
+checking whether v2 netCDF API should be built... yes
+checking whether the ncgen/ncdump/nccopy should be built... yes
+checking whether test should be built and run... no
+checking whether large file (> 2GB) tests should be run... no
+checking whether benchmaks should be run (experimental)... no
+checking whether extreme numbers should be used in tests... yes
+checking where to put large temp files if large file tests are run... .
+configure: finding C compiler
+checking for gcc... (cached) mpicc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether mpicc accepts -g... (cached) yes
+checking for mpicc option to accept ISO C89... (cached) none needed
+checking whether mpicc understands -c and -o together... (cached) yes
+checking dependency style of mpicc... (cached) gcc3
+checking for an ANSI C-conforming const... yes
+checking whether a CURLOPT_KEYPASSWD is defined... yes
+configure: setting up libtool
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by mpicc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from mpicc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking how to run the C preprocessor... mpicc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if mpicc supports -fno-rtti -fno-exceptions... no
+checking for mpicc option to produce PIC... -fPIC -DPIC
+checking if mpicc PIC flag -fPIC -DPIC works... yes
+checking if mpicc static flag -static works... no
+checking if mpicc supports -c -o file.o... yes
+checking if mpicc supports -c -o file.o... (cached) yes
+checking whether the mpicc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: finding other utilities
+checking for doxygen... no
+configure: WARNING: Doxygen not found - documentation will not be built
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+configure: displaying some results
+checking CPPFLAGS...
+checking CC CFLAGS... mpicc -g -O2
+checking type mpicc... mpicc is /usr/bin/mpicc
+checking CXX... mpicxx
+checking CXXFLAGS...
+checking type mpicxx... mpicxx is /usr/bin/mpicxx
+checking FC... mpif90
+checking FFLAGS...
+checking type mpif90... mpif90 is /usr/bin/mpif90
+checking F90... unset
+checking AR... ar
+checking AR_FLAGS... cru
+checking type ar... ar is /usr/bin/ar
+checking NM... /usr/bin/nm -B
+checking NMFLAGS...
+configure: checking types, headers, and functions
+checking for stdlib.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for strlcat... no
+checking for strerror... yes
+checking for snprintf... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strcat... yes
+checking for strcpy... yes
+checking for strdup... yes
+checking for strcasecmp... yes
+checking for strtod... yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strstr... yes
+checking for mkstemp... yes
+checking for rand... yes
+checking for getrlimit... yes
+checking for gettimeofday... yes
+checking for fsync... yes
+checking for MPI_Comm_f2c... yes
+checking whether in-memory files are enabled... configure: --enable-dap requires --enable-diskless
+yes
+checking for memmove... yes
+checking for getpagesize... yes
+checking for sysconf... yes
+checking whether mmap is enabled for in-memory files... no
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... yes
+checking for mremap... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether isnan is declared... yes
+checking whether isinf is declared... yes
+checking whether isfinite is declared... yes
+checking whether signbit is declared... yes
+checking for struct stat.st_blksize... yes
+checking for IEEE floating point format... yes
+checking for size_t... (cached) yes
+checking for off_t... yes
+checking for ssize_t... yes
+checking for ptrdiff_t... yes
+checking for uchar... no
+checking for longlong... no
+checking whether char is unsigned... no
+checking whether byte ordering is bigendian... no
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of float... 4
+checking size of double... 8
+checking size of off_t... 8
+checking size of size_t... 8
+checking for library containing deflate... -lz
+checking for floor in -lm... yes
+checking what to call the output of the ftpbin target... binary-netcdf-4.3.1_nc3.tar mpif90 mpicxx
+checking value of LIBS... -lm -lz -lcurl  -ldl
+configure: generating header files and makefiles
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating nc-config
+config.status: creating netcdf.pc
+config.status: creating include/Makefile
+config.status: creating h5_test/Makefile
+config.status: creating man4/Makefile
+config.status: creating man4/images/Makefile
+config.status: creating libsrc/Makefile
+config.status: creating libsrc4/Makefile
+config.status: creating libsrc5/Makefile
+config.status: creating nctest/Makefile
+config.status: creating nc_test4/Makefile
+config.status: creating nc_test/Makefile
+config.status: creating ncdump/Makefile
+config.status: creating ncgen3/Makefile
+config.status: creating ncgen/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/C/Makefile
+config.status: creating examples/CDL/Makefile
+config.status: creating oc2/Makefile
+config.status: creating libdap2/Makefile
+config.status: creating libdispatch/Makefile
+config.status: creating liblib/Makefile
+config.status: creating ncdump/cdl4/Makefile
+config.status: creating ncdump/expected4/Makefile
+config.status: creating ncdap_test/Makefile
+config.status: creating ncdap_test/testdata3/Makefile
+config.status: creating ncdap_test/expected3/Makefile
+config.status: creating ncdap_test/expected4/Makefile
+config.status: creating ncdap_test/expectremote3/Makefile
+config.status: creating ncdap_test/expectremote4/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+----------------------------------- SUMMARY -----------------------------------
+
+Package version.................... : libmesh-1.1.0-pre
+
+C++ compiler type.................. : gcc5
+C++ compiler....................... : mpicxx
+C compiler......................... : mpicc
+Fortran compiler................... : mpif90
+Build Methods...................... : dbg
+
+CPPFLAGS...(dbg)................... : -DDEBUG -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC
+CXXFLAGS...(dbg)................... : -std=gnu++11 -O0 -felide-constructors -g -pedantic -W -Wall -Wextra -Wno-long-long -Wunused -Wpointer-arith -Wformat -Wparentheses -Woverloaded-virtual -Wno-variadic-macros -fopenmp -std=gnu++11
+CFLAGS.....(dbg)................... : -g -Wimplicit -fopenmp
+
+Install dir........................ : /usr/local
+Build user......................... : thomas
+Build host......................... : wgapl-001
+Build architecture................. : x86_64-unknown-linux-gnu
+Git revision....................... : 88b953b47dcf959a726114856462f941550e240f
+
+Library Features:
+  library warnings................. : yes
+  adaptive mesh refinement......... : yes
+  blocked matrix/vector storage.... : no
+  complex variables................ : no
+  example suite.................... : yes
+  ghosted vectors.................. : yes
+  high-order shape functions....... : yes
+  unique-id support................ : yes
+  id size (boundaries)............. : 2 bytes
+  id size (dofs)................... : 4 bytes
+  id size (unique)................. : 8 bytes
+  id size (processors)............. : 2 bytes
+  id size (subdomains)............. : 2 bytes
+  infinite elements................ : yes
+  Dirichlet constraints............ : yes
+  node constraints................. : yes
+  parallel mesh.................... : no
+  performance logging.............. : yes
+  periodic boundary conditions..... : yes
+  reference counting............... : yes
+  shape function 2nd derivatives... : yes
+  stack trace files................ : yes
+  track node valence............... : yes
+  variational smoother............. : yes
+  xdr binary I/O................... : yes
+
+Optional Packages:
+  boost............................ : yes
+  capnproto........................ : no
+  cppunit.......................... : no
+  curl............................. : no
+  eigen............................ : yes
+  exodus........................... : yes
+     version....................... : v5.22
+  fparser.......................... : yes
+     build from version............ : release
+  glpk............................. : no
+  gmv.............................. : yes
+  gzstream......................... : yes
+  hdf5............................. : no
+  laspack.......................... : no
+  libhilbert....................... : yes
+  metis............................ : yes
+  mpi.............................. : yes
+  nanoflann........................ : yes
+  nemesis.......................... : yes
+     version....................... : v5.22
+  netcdf........................... : yes
+     version....................... : 4
+  nlopt............................ : no
+  parmetis......................... : yes
+  petsc............................ : no
+  qhull............................ : yes
+  sfcurves......................... : no
+  slepc............................ : no
+  thread model..................... : tbb
+  c++ rtti ........................ : yes
+  tecio............................ : yes
+  tecplot...(vendor binaries)...... : no
+  tetgen........................... : no
+  triangle......................... : no
+  trilinos......................... : no
+  vtk.............................. : yes
+     version....................... : 6.2.0
+
+  libmesh_optional_INCLUDES........ : -I/usr/include/eigen3 -I/usr/include/vtk-6.2 -I/usr/include -I/usr/include/mpi
+
+  libmesh_optional_LIBS............ : -lvtkIOCore-6.2 -lvtkCommonCore-6.2 -lvtkCommonDataModel-6.2 -lvtkFiltersCore-6.2 -lvtkIOXML-6.2 -lvtkImagingCore-6.2 -lvtkIOImage-6.2 -lvtkImagingMath-6.2 -lvtkIOParallelXML-6.2 -lz -ltbb -ltbbmalloc -lmpi -L/usr/lib -Wl,-rpath,/usr/lib
+
+-------------------------------------------------------------------------------
+Configure complete, now type 'make' and then 'make install'.
+
+---------------------------------------------
+--------- Done Configuring libMesh ----------
+---------------------------------------------
